@@ -25,6 +25,8 @@ fn p2h() {
         .ok()
         .expect("Failed to read line");
 
+    let input = input.trim();
+
     println!("\n{}{}", GREEN, encode(input)); // Encode
 }
 
@@ -32,7 +34,7 @@ fn p2h() {
 
 // Decode
 fn h2p() {
-    println!("\n{}Hex String: ", BLUE);
+    println!("\n{}Hex String(Without Padding): ", BLUE);
 
     let mut input = String::new(); // Creates new string
 
