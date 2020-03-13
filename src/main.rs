@@ -1,7 +1,7 @@
 // Dependencies
 use std::io::stdin;
 use hex::encode;
-use hex::decode;
+use hex::FromHex;
 
 
 
@@ -43,9 +43,11 @@ fn h2p() {
         .ok()
         .expect("Failed to read line");
 
-    let hex = input.trim();
+    let input = input.trim();
 
-    println!("\n{}{:?}", GREEN, decode(hex)); // Decode
+    let hex = <[u8; 4]>::from_hex(input).expect("Failed to Decode");
+
+    println!("\n{}{:?}", GREEN, hex); // Decode
 }
 
 
