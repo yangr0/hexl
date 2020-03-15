@@ -4,6 +4,7 @@
 // Dependencies
 use std::io::stdin;
 use std::process::exit;
+use std::process::Command;
 use hex::encode;
 use hex::FromHex;
 
@@ -63,6 +64,17 @@ fn h2p() {
 
 
 
+// Update
+fn update() {
+    Command::new("git")
+    .arg("pull")
+    .status()
+    .expect("\x1b[91mFailed to check for updates");
+    exit(0)
+}
+
+
+
 // Exit
 fn exitcode() {
     println!("{}Exiting...", RED);
@@ -73,10 +85,11 @@ fn exitcode() {
 
 // Prompt
 fn prompt() {
-    println!("{}Hexl v1.1\n\n", RED);
+    println!("{}Hexl v1.2\n", RED);
     println!("{}[1] From Plain Text to hexidecimals\n", YELLOW);
     println!("{}[2] From Hexidecimals to Plain text\n", BLUE);
-    println!("[x] Exit\n\n");
+    println!("{}[3] Check for updates\n", GREEN);
+    println!("{}[x] Exit\n\n", RED);
     println!("{}hexl > ", MAGENTA);
 
     let mut input = String::new(); // Creates new string
@@ -90,6 +103,7 @@ fn prompt() {
     match &input.trim()[..] {
         "1" => p2h(),
         "2" => h2p(),
+        "3" => update(),
         "x" => exitcode(),
         _ => println!("{}Invalid Option!", RED),
     };
