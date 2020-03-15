@@ -1,5 +1,9 @@
+// Created by inc0gnit0
+// https://github.com/iinc0gnit0/hexl
+
 // Dependencies
 use std::io::stdin;
+use std::process::exit;
 use hex::encode;
 use hex::FromHex;
 
@@ -25,7 +29,7 @@ fn p2h() {
         .ok()
         .expect("Failed to read line");
 
-    let input = input.trim();
+    let input = input.trim(); // Removes extra spaces
 
     println!("\n{}{}", GREEN, encode(input)); // Encode
 }
@@ -43,8 +47,9 @@ fn h2p() {
         .ok()
         .expect("Failed to read line");
 
-    let input = input.trim();
+    let input = input.trim(); // Removes extra spaces
 
+    // Decoding
     match Vec::from_hex(input) {
     Ok(vec) => {
         for b in vec {
@@ -58,11 +63,20 @@ fn h2p() {
 
 
 
+// Exit
+fn exitcode() {
+    println!("{}Exiting...", RED);
+    exit(0);
+}
+
+
+
 // Prompt
 fn prompt() {
-    println!("{}Hexl v1.0\n\n", red);
-    println!("{}1. From Plain Text to hexidecimals\n", YELLOW);
-    println!("{}2. From Hexidecimals to Plain text\n\n", BLUE);
+    println!("{}Hexl v1.1\n\n", RED);
+    println!("{}[1] From Plain Text to hexidecimals\n", YELLOW);
+    println!("{}[2] From Hexidecimals to Plain text\n", BLUE);
+    println!("[x] Exit\n\n");
     println!("{}hexl > ", MAGENTA);
 
     let mut input = String::new(); // Creates new string
@@ -76,7 +90,8 @@ fn prompt() {
     match &input.trim()[..] {
         "1" => p2h(),
         "2" => h2p(),
-        _ => println!("{}Invalid Options!", RED),
+        "x" => exitcode(),
+        _ => println!("{}Invalid Option!", RED),
     };
 }
 
