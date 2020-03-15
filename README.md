@@ -1,6 +1,6 @@
 # hexl
 
-Hex Converter
+Hexl is Hex to Plain Text converter and Plain Text to Hex converter made easy
 
 # Installation
 
