@@ -9,9 +9,9 @@ input() {
 
 case $input in  
 
-    y|Y) sudo mv target/debug/hexl /bin && echo "Use the command \"hexl\" to run" ;; 
+    y|Y) sudo mv target/debug/hexl /bin && echo "\n\nUse the command \"hexl\" to run" ;; 
     n|N) mv target/debug/hexl hexl ;; 
-    *) echo "Invalid Options" && input ;;
+    *) echo "\nInvalid Options" && input ;;
 
 esac
 }
