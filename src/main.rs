@@ -45,9 +45,16 @@ fn h2p() {
 
     let input = input.trim();
 
-    let hex = <[u8; 4]>::from_hex(input).expect("Failed to Decode");
-
-    println!("\n{}{:?}", GREEN, hex); // Decode
+    match Vec::from_hex(input) {
+    Ok(vec) => {
+        for b in vec {
+            println!("{}", b as char);
+        }
+    }
+    Err(_e) => {
+        // Deal with the error ...
+    }
+}
 }
 
 

@@ -8,3 +8,4 @@ edition = "2018"
 
 [dependencies]
 hex = "0.4.2"
+bytes = "0.5.4"
