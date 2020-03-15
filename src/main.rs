@@ -52,7 +52,6 @@ fn h2p() {
         }
     }
     Err(_e) => {
-        // Deal with the error ...
     }
 }
 }
