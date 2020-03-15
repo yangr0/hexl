@@ -60,6 +60,7 @@ fn h2p() {
 
 // Prompt
 fn prompt() {
+    println!("{}Hexl v1.0\n\n", red);
     println!("{}1. From Plain Text to hexidecimals\n", YELLOW);
     println!("{}2. From Hexidecimals to Plain text\n\n", BLUE);
     println!("{}hexl > ", MAGENTA);
