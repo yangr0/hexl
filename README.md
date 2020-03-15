@@ -8,6 +8,8 @@ Hexl is Hex to Plain Text converter and Plain Text to Hex converter made easy
 
 `cd hexl`
 
+`chmod +x install.sh`
+
 `./install.sh`
 
 # Usage
