@@ -16,6 +16,10 @@ Hexl is Hex to Plain Text converter and Plain Text to Hex converter made easy
 
 `./hexl`
 
+or
+
+`hexl`
+
 # Update
 
 `git pull`
