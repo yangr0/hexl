@@ -14,11 +14,9 @@ Hexl is Hex to Plain Text converter and Plain Text to Hex converter made easy
 
 # Usage
 
-`./hexl`
+use `./hexl` if you selected n during installation
 
-or
-
-`hexl`
+use `hexl` if you selected y during installation
 
 # Update
 
