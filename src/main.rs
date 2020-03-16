@@ -78,14 +78,14 @@ fn update() {
 // Exit
 fn exitcode() {
     println!("{}Exiting...", RED);
-    exit(0);
+    exit(0); 
 }
 
 
 
 // Prompt
-fn prompt() {
-    println!("{}Hexl v1.2\n", RED);
+fn prompt() {    
+    println!("{}            Hexl v1.3\n", RED);
     println!("{}[1] From Plain Text to hexidecimals\n", YELLOW);
     println!("{}[2] From Hexidecimals to Plain text\n", BLUE);
     println!("{}[3] Check for updates\n", GREEN);
@@ -112,7 +112,6 @@ fn prompt() {
 
 
 // Main
-#[allow(unused_variables)]
 fn main() {
 
     prompt();
