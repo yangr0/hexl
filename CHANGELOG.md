@@ -2,6 +2,10 @@
 
 - Released 3/14/20
 
-v1.1 
+# v1.1 
 
 - Added exit
+
+# v1.2
+
+- Added update function
