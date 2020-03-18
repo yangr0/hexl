@@ -1,6 +1,8 @@
 // Created by inc0gnit0
 // https://github.com/iinc0gnit0/hexl
 
+
+
 // Dependencies
 use std::io::stdin;
 use std::process::exit;
@@ -16,6 +18,14 @@ const GREEN: &str = "\x1b[92m";
 const YELLOW: &str = "\x1b[93m";
 const BLUE: &str = "\x1b[94m";
 const MAGENTA: &str = "\x1b[95m";
+
+
+
+// Exit
+fn exitcode() {
+    println!("{}Exiting...", RED);
+    exit(0); 
+}
 
 
 
@@ -75,22 +85,18 @@ fn update() {
 
 
 
-// Exit
-fn exitcode() {
-    println!("{}Exiting...", RED);
-    exit(0); 
-}
-
-
-
 // Prompt
-fn prompt() {    
-    println!("{}            Hexl v1.3\n", RED);
-    println!("{}[1] From Plain Text to hexidecimals\n", YELLOW);
-    println!("{}[2] From Hexidecimals to Plain text\n", BLUE);
-    println!("{}[3] Check for updates\n", GREEN);
-    println!("{}[x] Exit\n\n", RED);
-    println!("{}hexl > ", MAGENTA);
+fn prompt() {
+    println!("{}https://github.com/iinc0gnit0/hexl
+    
+    {}         Hexl v1.4
+
+{}[1] From Plain Text to hexidecimal
+{}[2] From Hexidecimals to Plain text
+{}[3] Check for updates
+{}[x] Exit
+
+{}[hexl]->",GREEN, RED, YELLOW, BLUE, GREEN, RED, MAGENTA);
 
     let mut input = String::new(); // Creates new string
 
@@ -114,5 +120,5 @@ fn prompt() {
 // Main
 fn main() {
 
-    prompt();
+    prompt(); // Calls prompt()
 }
