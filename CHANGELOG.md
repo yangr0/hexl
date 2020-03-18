@@ -9,3 +9,11 @@
 # v1.2
 
 - Added update function
+
+# v1.3
+
+- Fixes
+
+# v1.4
+
+- Improvements
