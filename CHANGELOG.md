@@ -17,3 +17,6 @@
 # v1.4
 
 - Improvements
+
+# v1.5
+- Fixed exit
