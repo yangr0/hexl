@@ -18,12 +18,13 @@ const GREEN: &str = "\x1b[92m";
 const YELLOW: &str = "\x1b[93m";
 const BLUE: &str = "\x1b[94m";
 const MAGENTA: &str = "\x1b[95m";
+const RESET: &str = "\x1b[0m";
 
 
 
 // Exit
 fn exitcode() {
-    println!("{}Exiting...", RED);
+    println!("{}Exiting...{}", RED, RESET);
     exit(0); 
 }
 
@@ -42,7 +43,7 @@ fn p2h() {
 
     let input = input.trim(); // Removes extra spaces
 
-    println!("\n{}{}", GREEN, encode(input)); // Encode
+    println!("\n{}{}{}", GREEN, encode(input), RESET); // Encode
 }
 
 
@@ -64,7 +65,7 @@ fn h2p() {
     match Vec::from_hex(input) {
     Ok(vec) => {
         for b in vec {
-            println!("{}", b as char);
+            println!("{}{}", b as char, RESET);
         }
     }
     Err(_e) => {
@@ -80,7 +81,8 @@ fn update() {
     .arg("pull")
     .status()
     .expect("\x1b[91mFailed to check for updates");
-    exit(0)
+    println!("{}", RESET);
+    exit(0);
 }
 
 
@@ -89,7 +91,7 @@ fn update() {
 fn prompt() {
     println!("{}https://github.com/iinc0gnit0/hexl
     
-    {}         Hexl v1.4
+    {}         Hexl v1.5
 
 {}[1] From Plain Text to hexidecimal
 {}[2] From Hexidecimals to Plain text
@@ -111,7 +113,7 @@ fn prompt() {
         "2" => h2p(),
         "3" => update(),
         "x" => exitcode(),
-        _ => println!("{}Invalid Option!", RED),
+        _ => println!("{}Invalid Option!{}", RED, RESET),
     };
 }
 
