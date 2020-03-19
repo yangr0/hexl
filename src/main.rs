@@ -81,7 +81,7 @@ fn update() {
     .arg("pull")
     .status()
     .expect("\x1b[91mFailed to check for updates");
-    println!("{}", RESET);
+    println!("{}", RESET); // Reset color
     exit(0);
 }
 
