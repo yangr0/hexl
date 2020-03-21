@@ -91,7 +91,7 @@ fn update() {
 fn prompt() {
     println!("{}https://github.com/iinc0gnit0/hexl
     
-    {}         Hexl v1.5
+    {}         Hexl v1.6
 
 {}[1] From Plain Text to hexidecimal
 {}[2] From Hexidecimals to Plain text
