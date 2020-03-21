@@ -20,3 +20,6 @@
 
 # v1.5
 - Fixed exit
+
+# v1.6
+- Improved Error Handling
