@@ -23,3 +23,6 @@
 
 # v1.6
 - Improved Error Handling
+
+# v1.7
+- Fixed newline error
