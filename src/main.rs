@@ -5,6 +5,8 @@
 
 // Dependencies
 use std::io::stdin;
+use std::io::stdout;
+use std::io::Write;
 use std::process::exit;
 use std::process::Command;
 use hex::encode;
@@ -32,7 +34,8 @@ fn exitcode() {
 
 // Encode
 fn p2h() {
-    println!("\n{}Plain Text String: ", YELLOW);
+    print!("\n{}Plain Text String: ", YELLOW);
+    stdout().flush().unwrap();
 
     let mut input = String::new(); // Creates new string
 
@@ -50,7 +53,8 @@ fn p2h() {
 
 // Decode
 fn h2p() {
-    println!("\n{}Hex String(Without Padding): ", BLUE);
+    print!("\n{}Hex String(Without Padding): ", BLUE);
+    stdout().flush().unwrap();
 
     let mut input = String::new(); // Creates new string
 
@@ -91,14 +95,15 @@ fn update() {
 fn prompt() {
     println!("{}https://github.com/iinc0gnit0/hexl
     
-    {}         Hexl v1.6
+    {}         Hexl v1.7
 
 {}[1] From Plain Text to hexidecimal
 {}[2] From Hexidecimals to Plain text
 {}[3] Check for updates
-{}[x] Exit
+{}[x] Exit\n",GREEN, RED, YELLOW, BLUE, GREEN, RED);
 
-{}[hexl]->",GREEN, RED, YELLOW, BLUE, GREEN, RED, MAGENTA);
+    print!("{}[hexl]-> ", MAGENTA);
+    stdout().flush().unwrap();
 
     let mut input = String::new(); // Creates new string
 
