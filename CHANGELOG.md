@@ -26,3 +26,7 @@
 
 # v1.7
 - Fixed newline error
+
+# v1.8
+- Removed bytes from dependencies
+- Fix colors in decode

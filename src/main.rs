@@ -27,7 +27,7 @@ const RESET: &str = "\x1b[0m";
 // Exit
 fn exitcode() {
     println!("{}Exiting...{}", RED, RESET);
-    exit(0); 
+    exit(0);
 }
 
 
@@ -69,12 +69,13 @@ fn h2p() {
     match Vec::from_hex(input) {
     Ok(vec) => {
         for b in vec {
-            println!("{}{}", b as char, RESET);
+            println!("{}", b as char);
         }
     }
     Err(_e) => {
     }
 }
+println!("{}", RESET); // Resets colors
 }
 
 
@@ -95,7 +96,7 @@ fn update() {
 fn prompt() {
     println!("{}https://github.com/iinc0gnit0/hexl
     
-    {}         Hexl v1.7
+    {}         Hexl v1.8
 
 {}[1] From Plain Text to hexidecimal
 {}[2] From Hexidecimals to Plain text
