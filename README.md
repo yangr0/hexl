@@ -2,15 +2,46 @@
 
 Hexl is Hex to Plain Text converter and Plain Text to Hex converter made easy
 
-# Installation
+# Compatitablitiy
 
-`git clone https://github.com/iinc0gnit0/hexl`
+- Any debian based OS
+
+# Requirements
+
+- Compatitiable device
+
+- Rust
+
+- 
+
+# Easy Installation
+
+Easy one-liner to install:
+```bash
+git clone https://github.com/iinc0gnit0/hexl && cd hexl && chmod +x * && ./install.sh
+```
+
+# Manual Installation
+
+Clone the repository
+
+`git clone https:/github.com/iinc0gnit0/hexl`
+
+Change directory to hexl
 
 `cd hexl`
 
-`chmod +x install.sh`
+Install dependencies
 
-`./install.sh`
+`sudo apt-get install cargo`
+
+Compile
+
+`cargo build`
+
+Move executable to hexl directory
+
+`mv target/debug/hexl hexl`
 
 # Usage
 
