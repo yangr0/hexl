@@ -32,4 +32,4 @@ Email: iinc0gnit0@pm.me
 
 Telegram: [iinc0gnit0](https://t.me/iinc0gnit0)
 
-Please drop a star if you enjoyed this. It is much appreciated!
+Please drop a star if you enjoyed this. It is much appreciated! ![GitHub stars](https://img.shields.io/github/stars/iinc0gnit0/hexl?style=social) ![GitHub followers](https://img.shields.io/github/followers/iinc0gnit0?style=social)
