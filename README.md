@@ -20,6 +20,8 @@ Hexl is Hex to Plain Text converter and Plain Text to Hex converter made easy
 
 `git pull`
 
+All updates are located in [CHANGELOG.md](https://github.com/iinc0gnit0/hexl/blob/master/CHANGELOG.md)
+
 # Credit
 
 GitHub: [iinc0gnit0](https://github.com/iinc0gnit0)
