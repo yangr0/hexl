@@ -35,7 +35,7 @@ Install dependencies
 
 `sudo apt-get install cargo`
 
-Compile
+Compile main.rs
 
 `cargo build`
 
