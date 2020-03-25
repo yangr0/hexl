@@ -31,3 +31,5 @@ Instagram: [inc0gnit0.offical](https://instagram.com/inc0gnit0.offical)
 Email: iinc0gnit0@pm.me
 
 Telegram: [iinc0gnit0](https://t.me/iinc0gnit0)
+
+Please drop a star if you enjoyed this. It is much appreciated!
