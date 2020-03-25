@@ -16,6 +16,8 @@ Hexl is Hex to Plain Text converter and Plain Text to Hex converter made easy
 
 `./hexl`
 
+Source code is located at [src/main.rs](https://github.com/iinc0gnit0/hexl/blob/master/src/main.rs)
+
 # Update
 
 `git pull`
