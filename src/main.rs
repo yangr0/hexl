@@ -68,8 +68,9 @@ fn h2p() {
     // Decoding
     match Vec::from_hex(input) {
     Ok(vec) => {
-        for b in vec {
-            println!("{}", b as char);
+        for bytes in vec {
+            print!("{}", bytes as char);
+            stdout().flush().unwrap();
         }
     }
     Err(_e) => {
@@ -96,7 +97,7 @@ fn update() {
 fn prompt() {
     println!("{}https://github.com/iinc0gnit0/hexl
     
-    {}         Hexl v1.8
+    {}         Hexl v1.9
 
 {}[1] From Plain Text to hexidecimal
 {}[2] From Hexidecimals to Plain text
