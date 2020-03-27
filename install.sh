@@ -4,4 +4,4 @@ sudo apt-get install cargo
 
 cargo build
 
-mv target/debug/hexl hexl
+mv target/debug/hexl .

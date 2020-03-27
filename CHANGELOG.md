@@ -32,3 +32,4 @@
 
 # 2.0
 - Added decode error handling
+- Better install.sh
