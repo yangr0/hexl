@@ -47,7 +47,7 @@ Move executable to hexl directory
 
 `./hexl`
 
-Source code is located at <a href="https://github.com/iinc0gnit0/hexl/blob/master/src/main.rs" target="_blank">/src/main.rs</a>
+Source code is located at <a href="https://github.com/iinc0gnit0/hexl/blob/master/src/main.rs" target="_blank">src/main.rs</a>
 
 # Update
 
