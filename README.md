@@ -47,13 +47,13 @@ Move executable to hexl directory
 
 `./hexl`
 
-Source code is located at [src/main.rs](https://github.com/iinc0gnit0/hexl/blob/master/src/main.rs)
+Source code is located at <a href="https://github.com/iinc0gnit0/hexl/blob/master/src/main.rs" target="_blank">/src/main.rs</a>
 
 # Update
 
 `git pull`
 
-All updates are located in [CHANGELOG.md](https://github.com/iinc0gnit0/hexl/blob/master/CHANGELOG.md)
+All updates are located in <a href="https://github.com/iinc0gnit0/hexl/blob/master/CHANGELOG.md" target="_blank">CHANGLOG.md</a>
 
 # Credit
 
