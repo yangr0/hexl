@@ -41,7 +41,7 @@ Compile main.rs
 
 Move executable to hexl directory
 
-`mv target/debug/hexl hexl`
+`mv target/debug/hexl .`
 
 # Usage
 
