@@ -29,3 +29,6 @@
 # v1.9
 - Better variable names
 - Better decode output
+
+# 2.0
+- Added decode error handling

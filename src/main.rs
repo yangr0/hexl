@@ -67,13 +67,16 @@ fn h2p() {
 
     // Decoding
     match Vec::from_hex(input) {
-    Ok(vec) => {
-        for bytes in vec {
+    Ok(vector) => {
+        for bytes in vector {
             print!("{}", bytes as char);
             stdout().flush().unwrap();
         }
     }
     Err(_e) => {
+        println!("{}Something went wrong!
+Please make you don't have spaces and is a valid hexadecimal
+Error: {}{}", RED, _e, RESET);
     }
 }
 println!("{}", RESET); // Resets colors
@@ -95,9 +98,10 @@ fn update() {
 
 // Prompt
 fn prompt() {
-    println!("{}https://github.com/iinc0gnit0/hexl
+    println!("
+{}https://github.com/iinc0gnit0/hexl
     
-    {}         Hexl v1.9
+    {}        Hexl v2.0
 
 {}[1] From Plain Text to hexidecimal
 {}[2] From Hexidecimals to Plain text
@@ -115,7 +119,7 @@ fn prompt() {
         .expect("Failed to read line");
 
     // Interpret input
-    match &input.trim()[..] {
+    match &input.to_lowercase().trim()[..] {
         "1" => p2h(),
         "2" => h2p(),
         "3" => update(),
